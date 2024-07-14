@@ -22,15 +22,25 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
                         name = "Variables\n" +
-                                "Es un espacio de memoria que se usa para almacenar datos que pueden cambiar durante la ejecución del programa. Las variables se declaran usando la palabra clave var.\n\n" +
+                                "Es un espacio de memoria que se usa para almacenar datos que pueden cambiar durante la ejecución.\n " +
+                                "var edad: Int = 30\n" +
+                                "var nombre: String = \"Juan\"\n" +
                                 "Constantes\n" +
-                                "Es similar a una variable, pero su valor no puede cambiar después de ser inicializado. Las constantes se declaran usando la palabra clave val.\n\n"+
+                                "Es similar a una variable, pero su valor no puede cambiar después de ser inicializado.\n " +
+                                "val PI: Double = 3.14159\n" +
+                                "val nombreEmpresa: String = \"Mi Empresa\"\n"+
                                 "Opcionales\n" +
-                                "Se manejan mediante tipos que permiten nulos. Un tipo nullable se declara usando el signo de interrogación ? después del tipo.\n\n"+
+                                "Se manejan mediante tipos que permiten nulos.\n " +
+                                "var direccion:" +
+                                " String? = null\n" +
+                                "var telefono: Int? = 1234567890\n"+
                                 "Nulos\n" +
-                                "Representan la ausencia de un valor. En Kotlin, los tipos que permiten nulos deben manejarse cuidadosamente para evitar errores.\n\n"+
+                                "Representan la ausencia de un valor. En Kotlin, var nombreUsuario: \n" +
+                                " String? = null\n" +
+                                "var edadUsuario: Int? = 25\n"+
                                 "README.MD\n"+
-                                "Es un archivo de texto que se usa para proporcionar información sobre el proyecto. Generalmente se escribe en formato Markdown y puede incluir una descripción del proyecto.\n\n",
+                                "Es un archivo de texto que se usa para proporcionar información sobre el proyecto. \n"+
+                                "#HOLA KOTLIN. \n",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
